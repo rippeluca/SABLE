@@ -101,15 +101,30 @@ flowchart TD
   E --> F["Remove the highest, lowest, or random sentences"]
   C --> G["Draw the label five times"]
   C --> H["Write the rationale before the label"]
+  C --> I["Second call sees the quotes, not the chunks"]
 ```
 
 The full text is split into chunks of 1,000 characters with an overlap of 200, embedded with `text-embedding-ada-002`, and searched inside that paper's DOI. The query is the claim. The gold label and the marked sentence are not shown to the labeler. The labeler is `gpt-4o-mini`. It returns JSON, with the label before the rationale, and it is told to use only the supplied passages.
 
 Sentence SHAP is restricted to the 32 claims that stay *supported* after the span is removed. The value is the log probability that the label starts with the token *supported*. A sparsity penalty keeps at most ten sentences away from zero. The same sentences are then deleted in sets of 1, 3, 5, 7, and 10: highest values, lowest values, and a random order fixed per claim.
 
+## A second call does not raise the match count
+
+The same 67 prompts are labeled again, at temperature 0, on the same five chunks. The reply now includes one or two quotes, meant to be copied from those chunks. A second call sees the claim, the proposed label, the rationale, and the quotes. It does not see the chunks. The label is kept only when the two labels agree and every quote is an exact substring of a retrieved chunk. Otherwise the claim is left unanswered. One setting allows a single revision, then abstains. The kept label is the label from the call that saw the chunks.
+
+| | Answers | Match the human label | Unanswered |
+|---|---:|---:|---:|
+| Temperature 0 | 67 | 53 | 0 |
+| One round | 12 | 11 | 55 |
+| One revision | 19 | 15 | 48 |
+
+Every kept label is the temperature-0 label. The one-round mismatch with the human label is a claim the temperature-0 decode already missed. The revision accepts 7 claims the one-round setting left unanswered, and 4 of those 7 match the human label. No accepted label is withdrawn, and no temperature-0 error is corrected. After one round this leaves unanswered 42 claims the temperature-0 label got right and 13 it got wrong. After the revision those counts are 38 and 10.
+
+The abstention is mostly the quote rule. After one round, 48 claims have a quote that is not an exact copy. On 38 of the 55 unanswered claims the two labels agree, and the quote is what drops the claim. The labels disagree on an exact quote for 7 claims. After the revision, 46 claims still fail the quote test, and the labels disagree on an exact quote for 2 claims. A shortened clause, a paraphrase, or an ellipsis is counted as a miss. The check does not measure how close the quote is.
+
 ## Scope
 
-Sixty-seven claims, one annotator, one evidence span per claim, one model. The spans keep the defects of the PDF extract, and those defects enter the deletion and the SHAP sentences. The search never leaves the source paper. SHAP explains one score under a penalty that sets most sentences to zero. Confidence is the probability of the first label token, not of the whole label. The five draws are one sample at one temperature.
+Sixty-seven claims, one annotator, one evidence span per claim, one model. The second call sees the quotes but not the chunks, and a quote counts only when the characters match. The spans keep the defects of the PDF extract, and those defects enter the deletion and the SHAP sentences. The search never leaves the source paper. SHAP explains one score under a penalty that sets most sentences to zero. Confidence is the probability of the first label token, not of the whole label. The five draws are one sample at one temperature.
 
 Deleting a sentence edits the prompt. It is not an estimate of a biological effect. The study says where this label comes from in the prompt. It does not say that the model has checked the paper.
 
@@ -138,6 +153,10 @@ The full texts come from the Zenodo record [10.5281/zenodo.14525619](https://doi
 | `results/similarity_by_claim.csv` | The same similarity, one row per claim |
 | `results/shap_similarity.csv` | Sentence-level similarity |
 | `results/order_predictions.csv` | Labels when the rationale is written first |
+| `results/v2/comparison.csv` | One-round and one-revision counts |
+| `results/v2/v2a.csv` | One-round decision for each claim |
+| `results/v2/v2b.csv` | One-revision decision for each claim |
+| `sable/` | The second-call loop |
 | `figures/` | The three figures in this poster |
 | `main.ipynb` | The run, from retrieval through the order check |
 | `scripts/` | The same steps as importable runners |
@@ -159,6 +178,7 @@ python -m scripts.sentence_shap
 python -m scripts.sample_labels
 python -m scripts.shap_similarity
 python -m scripts.order_intervention
+python -m sable.batch
 ```
 
 `sentence_shap` also rebuilds the Chroma index under `chroma_db/`.
