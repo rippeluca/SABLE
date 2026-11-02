@@ -26,5 +26,6 @@ data/*.npz
 # Early data-exploration notebook
 test_data.ipynb
 
-# Local write-up. Not part of the public snapshot.
-report_paper/
+# Local write-up. The PDF is the public paper.
+report_paper/*
+!report_paper/main.pdf

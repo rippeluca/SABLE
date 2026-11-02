@@ -8,6 +8,8 @@ A feasibility study on invasion-biology claims
 
 Luca Rippe
 
+[Paper](report_paper/main.pdf)
+
 </div>
 
 A same-paper retriever and `gpt-4o-mini` often match the human label. Deleting the sentence an annotator marked as evidence usually leaves that label where it was. A few other sentences move it.
