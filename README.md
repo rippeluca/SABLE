@@ -2,8 +2,7 @@
 
 # **SABLE** · Span Ablation for Black-box Label Evaluation
 
-A feasibility study on invasion-biology claims
-
+A feasibility study on invasion-biology claims.
 A full paper-style report on the experiments carried out in this project can be found [here](report_paper/main.pdf).
 
 </div>
