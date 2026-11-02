@@ -1,0 +1,11 @@
+# Temperature-0 label. "unclear" is the third label, not a probability cutoff.
+PREFIX sable: <https://github.com/Acul01/SABLE/vocab#>
+
+SELECT ?hypothesis ?predicted ?gold
+WHERE {
+  ?hypothesis a sable:Hypothesis ;
+              sable:predictedLabel ?predicted ;
+              sable:goldLabel ?gold .
+  FILTER(?predicted = "supported" || ?predicted = "unclear")
+}
+ORDER BY ?predicted ?hypothesis

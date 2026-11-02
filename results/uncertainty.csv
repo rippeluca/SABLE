@@ -1,0 +1,68 @@
+claim_id,majority,agreement,token_entropy,majority_draws,mean_tokens
+c001,supported,1.0,0.148878,5,52.0
+c002,not supported,1.0,0.360261,5,48.4
+c003,supported,1.0,0.334316,5,45.4
+c004,not supported,1.0,0.446139,5,54.0
+c005,supported,1.0,0.292397,5,50.6
+c006,not supported,0.6,0.539192,3,60.3
+c007,supported,1.0,0.387087,5,45.0
+c008,supported,1.0,0.125883,5,57.2
+c009,supported,1.0,0.192685,5,53.6
+c010,not supported,1.0,0.412881,5,51.2
+c011,not supported,1.0,0.301000,5,58.2
+c012,supported,1.0,0.266820,5,54.4
+c013,not supported,1.0,0.376650,5,44.0
+c014,not supported,1.0,0.385706,5,44.2
+c015,supported,1.0,0.267528,5,48.8
+c016,supported,1.0,0.136319,5,52.2
+c017,supported,1.0,0.488026,5,47.4
+c018,not supported,1.0,0.228318,5,42.4
+c019,supported,1.0,0.236215,5,46.8
+c020,supported,1.0,0.177788,5,54.0
+c021,supported,1.0,0.343072,5,46.4
+c022,not supported,1.0,0.367075,5,51.4
+c023,not supported,1.0,0.479407,5,55.4
+c024,supported,1.0,0.500534,5,42.8
+c025,not supported,1.0,0.441194,5,73.4
+c026,supported,1.0,0.306008,5,54.6
+c027,supported,1.0,0.193654,5,44.0
+c028,supported,1.0,0.230894,5,42.6
+c029,supported,1.0,0.314777,5,46.2
+c030,supported,1.0,0.253303,5,57.6
+c031,supported,1.0,0.116998,5,52.4
+c032,supported,1.0,0.348978,5,58.6
+c033,supported,1.0,0.318906,5,48.6
+c034,supported,1.0,0.256672,5,48.4
+c035,supported,1.0,0.206582,5,48.2
+c036,not supported,1.0,0.608788,5,57.2
+c037,not supported,1.0,0.280314,5,61.8
+c038,supported,1.0,0.267642,5,64.0
+c039,supported,1.0,0.311082,5,48.4
+c040,not supported,1.0,0.382274,5,53.4
+c041,supported,1.0,0.270348,5,42.4
+c042,not supported,1.0,0.348226,5,44.6
+c043,supported,1.0,0.316000,5,56.2
+c044,supported,1.0,0.174212,5,56.2
+c045,supported,1.0,0.459653,5,51.8
+c046,unclear,0.6,0.424006,3,53.3
+c047,supported,1.0,0.146493,5,45.0
+c048,not supported,1.0,0.256924,5,51.4
+c049,supported,1.0,0.232397,5,52.2
+c050,supported,1.0,0.281970,5,53.8
+c051,supported,1.0,0.098768,5,46.4
+c052,supported,1.0,0.369002,5,51.6
+c053,not supported,1.0,0.113385,5,41.0
+c054,supported,1.0,0.339956,5,53.4
+c055,supported,1.0,0.423102,5,55.4
+c056,supported,0.8,0.599013,4,54.2
+c057,supported,1.0,0.225660,5,50.0
+c058,supported,1.0,0.187326,5,39.4
+c059,supported,1.0,0.350362,5,53.6
+c060,not supported,1.0,0.542919,5,50.4
+c061,supported,1.0,0.543921,5,60.8
+c062,supported,1.0,0.174558,5,54.0
+c063,supported,1.0,0.307217,5,52.2
+c064,supported,1.0,0.563351,5,48.6
+c065,supported,1.0,0.646580,5,47.4
+c066,not supported,1.0,0.632643,5,55.2
+c067,not supported,1.0,0.492376,5,59.0

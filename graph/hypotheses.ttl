@@ -1,0 +1,1918 @@
+# Hypothesis graph for the SABLE runs.
+# A claim is a hypothesis. The annotator's sentence is an evidence span.
+# The paper is a DOI. The theme is the context node stored with the paper.
+# cito:supports and cito:disputes follow the human label.
+# sable:predictedLabel is the temperature-0 label.
+# sable:decision is the one-round check.
+# sable:tokenProbability is the first label token of the one-round check.
+# sable:tokenEntropy is the mean token entropy of five full replies, averaged
+# over the replies that emitted the majority label. sable:agreement is the
+# share of those five replies.
+# sable:labelChanged is present only where the span was deleted.
+
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix id: <https://github.com/Acul01/SABLE/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sable: <https://github.com/Acul01/SABLE/vocab#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sable:Evidence a rdfs:Class ;
+    rdfs:label "evidence span" .
+
+sable:Hypothesis a rdfs:Class ;
+    rdfs:label "hypothesis" .
+
+<https://github.com/Acul01/SABLE/id/c001/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3391/ai.2021.16.1.07> ;
+    cito:supports id:c001 ;
+    sable:evidenceFor id:c001 ;
+    sable:span "We found that densities of both life stages were lower at western sites with lower water clarity, higher salinity, and higher productivity." .
+
+<https://github.com/Acul01/SABLE/id/c002/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3391/ai.2021.16.1.07> ;
+    sable:evidenceFor id:c002 ;
+    sable:span "Further studies are needed within Lake Texoma to directly measure flow and its effects on zebra mussel propagule pressure and establishment." .
+
+<https://github.com/Acul01/SABLE/id/c003/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3391/bir.2022.11.4.21> ;
+    cito:supports id:c003 ;
+    sable:evidenceFor id:c003 ;
+    sable:span "it     Abstract Here, we report the first record of quagga mussel, Dreissena bugensis Andrusov, 1897, in Italy." .
+
+<https://github.com/Acul01/SABLE/id/c004/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3391/bir.2022.11.4.21> ;
+    sable:evidenceFor id:c004 ;
+    sable:span "However, considering the limited sampled area, a reliable estimate of the colonization timing will require further observations extended in other areas and depths of the lake." .
+
+<https://github.com/Acul01/SABLE/id/c005/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1007/s10530-021-02644-y> ;
+    cito:supports id:c005 ;
+    sable:evidenceFor id:c005 ;
+    sable:span "Combined, thetwo sampling methods revealed A. astaci presencewith DNA concentrations above limit of detection(LOD; the lowest concentration which can be detectedwith reasonable certainty) in 13 of 23 invasive crayfishpopulations." .
+
+<https://github.com/Acul01/SABLE/id/c006/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1007/s10530-021-02644-y> ;
+    cito:disputes id:c006 ;
+    sable:evidenceFor id:c006 ;
+    sable:span "For example, there was no generalincrease in detection rate with crayfish size, eventhough larger individuals yielded larger uropod tissuesamples." .
+
+<https://github.com/Acul01/SABLE/id/c007/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1186/s12862-015-0296-2> ;
+    cito:supports id:c007 ;
+    sable:evidenceFor id:c007 ;
+    sable:span "Results: Molecular phylogenetics and ancestral range reconstructions allowed us to identify several independentAsian invasions in Lakes Malawi and Tanganyika, the Congo River, Nigeria and Cameroon." .
+
+<https://github.com/Acul01/SABLE/id/c008/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.4102/abc.v47i2.2177> ;
+    cito:supports id:c008 ;
+    sable:evidenceFor id:c008 ;
+    sable:span "Results: A FISK score of 14 was identified as the threshold to delineate between species that could become invasive in South Africa and those that are unlikely to become invasive." .
+
+<https://github.com/Acul01/SABLE/id/c009/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.4102/abc.v47i2.2177> ;
+    cito:supports id:c009 ;
+    sable:evidenceFor id:c009 ;
+    sable:span "Of the three species evaluated, Silurus glanis had a high risk of becoming invasive in South Africa, Lates calcarifer was likely to be invasive and Oncorhynchus tshawytscha was unlikely to be invasive in South Africa." .
+
+<https://github.com/Acul01/SABLE/id/c010/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3390/d12020082> ;
+    cito:disputes id:c010 ;
+    sable:evidenceFor id:c010 ;
+    sable:span "We found that primary producer standingcrops and the GPP of epiphytes, phytoplankton, and benthic periphyton were variable among lakesand not significantly different between paired study plots." .
+
+<https://github.com/Acul01/SABLE/id/c011/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3390/d12020082> ;
+    sable:evidenceFor id:c011 ;
+    sable:span "However, because of the paired study design, it is unclear if this pattern was driven bydifferences in IWM or total macrophyte biomass." .
+
+<https://github.com/Acul01/SABLE/id/c012/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1111/ddi.13501> ;
+    cito:supports id:c012 ;
+    sable:evidenceFor id:c012 ;
+    sable:span "Results: Cumulative total global costs of invasive macrofouling bivalves were $ 63.7 billion (2017 US$) across all regions and socio- economic sectors between 1980 and 2020." .
+
+<https://github.com/Acul01/SABLE/id/c013/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1002/ece3.9493> ;
+    cito:supports id:c013 ;
+    sable:evidenceFor id:c013 ;
+    sable:span "Invasion degreeWe	 found	 a	 positive	 relationship	 between	 species	 richness	 and	invasion	 degree	 suggesting	 that	 the	 presence	 of	 non-	native	 spe-cies	equaled	or	exceeded	species	 loss	within	sites	 (Li	et	al." .
+
+<https://github.com/Acul01/SABLE/id/c014/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1002/ece3.9493> ;
+    cito:disputes id:c014 ;
+    sable:evidenceFor id:c014 ;
+    sable:span "Italian	native	and	exotic	species	did	not	differ	in	their	SCBD	values	(KW	χ2 = 0.29, df = 1, p > .05)." .
+
+<https://github.com/Acul01/SABLE/id/c015/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1111/eva.13469> ;
+    cito:supports id:c015 ;
+    sable:evidenceFor id:c015 ;
+    sable:span "We observed the strongest population genetic differen-tiation in three- spined stickleback (global FST = 0.117), followed by stone loach (global FST = 0.081) and topmouth gudgeon (global FST = 0.038)." .
+
+<https://github.com/Acul01/SABLE/id/c016/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3389/fpls.2019.00647> ;
+    cito:supports id:c016 ;
+    sable:evidenceFor id:c016 ;
+    sable:span "We found L. hexapetala to have higherphotosynthetic efficiency and to tolerate higher light intensities than N." .
+
+<https://github.com/Acul01/SABLE/id/c017/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3389/fpls.2019.00647> ;
+    cito:disputes id:c017 ;
+    sable:evidenceFor id:c017 ;
+    sable:span "The photophysiological properties of Nelumbo did notdiffer from those of the local macrophytes, therefore Nelumboaligned with the rest of the species present within the PCA." .
+
+<https://github.com/Acul01/SABLE/id/c018/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1111/geb.13051> ;
+    cito:disputes id:c018 ;
+    sable:evidenceFor id:c018 ;
+    sable:span "Effects of lake presence and flow accumulation were less consistent across groups, while temperature surprisingly had no significant effect on any group (Figure 4a and Supporting Information Appendix S5)." .
+
+<https://github.com/Acul01/SABLE/id/c019/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1111/geb.13051> ;
+    cito:supports id:c019 ;
+    sable:evidenceFor id:c019 ;
+    sable:span "Our findings support the hypothesis that measures of human ac-tivity in the surrounding landscape, quantified using connectivity indices informed by hydrological network topology, provide a bet-ter explanation of the invasion of freshwater ecosystems than local human activity." .
+
+<https://github.com/Acul01/SABLE/id/c020/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1007/s10750-020-04318-7> ;
+    cito:supports id:c020 ;
+    sable:evidenceFor id:c020 ;
+    sable:span "After the third Elodeacollapse, the submerged macrophytes did not recover,and the lake remained in the 2000s in a hypertrophicstate dominated by cyanobacterial blooms." .
+
+<https://github.com/Acul01/SABLE/id/c021/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3989/ajbm.2623> ;
+    cito:supports id:c021 ;
+    sable:evidenceFor id:c021 ;
+    sable:span "Only Ficus benjamina has no potential to invade (Green list)." .
+
+<https://github.com/Acul01/SABLE/id/c022/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1093/aobpla/plab042> ;
+    cito:disputes id:c022 ;
+    sable:evidenceFor id:c022 ;
+    sable:span "Instead, soil C:N ratios and microbial biomass did not differ between invaded and naturally occurring reference pools but were reduced in the manipulated created pools independent of invasion levels." .
+
+<https://github.com/Acul01/SABLE/id/c023/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1002/ecs2.2097> ;
+    cito:disputes id:c023 ;
+    sable:evidenceFor id:c023 ;
+    sable:span "Whilegreen tea decomposition did not differ signiﬁ-cantly between invaded and control plots,I." .
+
+<https://github.com/Acul01/SABLE/id/c024/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3390/f13020273> ;
+    cito:supports id:c024 ;
+    sable:evidenceFor id:c024 ;
+    sable:span "The survey revealed that official and non-official national recommendations, based on provenanceresearch results, have been elaborated and followed at a different level and extend for the abovefive species, but only for Douglas fir recommendations exist in almost all the participating to thesurvey countries." .
+
+<https://github.com/Acul01/SABLE/id/c025/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3389/fevo.2022.1080599> ;
+    cito:supports id:c025 ;
+    sable:evidenceFor id:c025 ;
+    sable:span "The two most frequent aphid species, found both on Canadian goldenrod and crop plants, were the leaf-curling plum aphid, Brachycaudus helichrysi Kaltenbach and the glasshouse-potato aphid, Aulacorthum solani (Kaltenbach)." .
+
+<https://github.com/Acul01/SABLE/id/c026/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3390/insects13100877> ;
+    cito:supports id:c026 ;
+    sable:evidenceFor id:c026 ;
+    sable:span "Analysis of MT-CO1 sequence divergence revealedsignificant levels of genetic variation (17.7%) and supported the results from the morphometricanalysis; therefore, it is determined that they are two different species." .
+
+<https://github.com/Acul01/SABLE/id/c027/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3897/italianbotanist.11.68063> ;
+    cito:supports id:c027 ;
+    sable:evidenceFor id:c027 ;
+    sable:span "AbstractIn this contribution, new data concerning the distribution of vascular flora alien to Italy are presented." .
+
+<https://github.com/Acul01/SABLE/id/c028/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3391/mbi.2017.8.3.17> ;
+    cito:supports id:c028 ;
+    sable:evidenceFor id:c028 ;
+    sable:span "This paper reports on the introduction of pumpkinseed Lepomis gibbosus, a North American sunfish, into an angling lake as a contaminant of native aquatic plants during their stocking to enhance the fishery." .
+
+<https://github.com/Acul01/SABLE/id/c029/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1038/s41467-018-06995-4> ;
+    cito:supports id:c029 ;
+    sable:evidenceFor id:c029 ;
+    sable:span "Here we showthat across six different habitat types in temperate Central Europe, naturalized non-invasivespecies are functionally similar to native species occurring in the same habitat type, butinvasive species are different as they occupy the edge of the plant functional trait spacerepresented in each habitat." .
+
+<https://github.com/Acul01/SABLE/id/c030/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3897/neobiota.71.69716> ;
+    cito:supports id:c030 ;
+    sable:evidenceFor id:c030 ;
+    sable:span "Anđelković et al.  /  NeoBiota 71: 23–48 (2022)24lines and housing areas was not related to the invasion level." .
+
+<https://github.com/Acul01/SABLE/id/c031/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.7717/peerj.6479> ;
+    cito:supports id:c031 ;
+    sable:evidenceFor id:c031 ;
+    sable:span "Hotspots with apotential risk of IPS (such as aquatic plants, trees, and herbs) expanding in globalecoregions were distributed in Northern Europe, the UK, South America,North America, southwest China, and New Zealand." .
+
+<https://github.com/Acul01/SABLE/id/c032/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3390/plants11152059> ;
+    cito:supports id:c032 ;
+    sable:evidenceFor id:c032 ;
+    sable:span "Seed germination wasmostly affected by NaCl, but less by PEG in both species." .
+
+<https://github.com/Acul01/SABLE/id/c033/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3391/ai.2022.17.1.01> ;
+    cito:supports id:c033 ;
+    sable:evidenceFor id:c033 ;
+    sable:span "Near the island of Sylt, dense turfs of green filaments rapidly expanded over an area of 180 ha within 3 years." .
+
+<https://github.com/Acul01/SABLE/id/c034/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3391/bir.2022.11.1.02> ;
+    cito:supports id:c034 ;
+    sable:evidenceFor id:c034 ;
+    sable:span "Based on literature searches, the following identification represents the first known occurrence in an inland mineral spring in the Siwa Oasis, the Western Desert of Egypt, and of this diatom species in mineral desert springs generally, or from any inland waterbody." .
+
+<https://github.com/Acul01/SABLE/id/c035/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3391/bir.2022.11.1.02> ;
+    sable:evidenceFor id:c035 ;
+    sable:span "We further hypothesize that the primary negative consequence of this invasion is likely to be the alteration of diatom community composition, with possible replacement of characteristic native taxa." .
+
+<https://github.com/Acul01/SABLE/id/c036/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1007/s10530-022-02839-x> ;
+    cito:supports id:c036 ;
+    sable:evidenceFor id:c036 ;
+    sable:span "Compared to control water, the isopods lowered their activity when exposed to the fish cue." .
+
+<https://github.com/Acul01/SABLE/id/c037/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1007/s10530-022-02839-x> ;
+    cito:disputes id:c037 ;
+    sable:evidenceFor id:c037 ;
+    sable:span "Instead crab cue did not induce anti-predator behaviour." .
+
+<https://github.com/Acul01/SABLE/id/c038/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3389/fmars.2022.983685> ;
+    cito:supports id:c038 ;
+    sable:evidenceFor id:c038 ;
+    sable:span "Subsequently, by reconstructing decadal trends of sea surfacetemperature (SST) change between 1978 and 2018, we found that SST innorthern Japan and the East China Sea indeed increased broadly by 0.25-0.4°C/decade." .
+
+<https://github.com/Acul01/SABLE/id/c039/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1371/journal.pone.0154201> ;
+    cito:supports id:c039 ;
+    sable:evidenceFor id:c039 ;
+    sable:span "D. perlucidum was largely pres-ent near areas of infrastructure, particularly mooring buoys, suggesting these were thesource of D." .
+
+<https://github.com/Acul01/SABLE/id/c040/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1371/journal.pone.0154201> ;
+    sable:evidenceFor id:c040 ;
+    sable:span "Further research is needed to determine the extent of interaction betweenthese two species." .
+
+<https://github.com/Acul01/SABLE/id/c041/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1098/rsos.150039> ;
+    cito:supports id:c041 ;
+    sable:evidenceFor id:c041 ;
+    sable:span "Ballast water dischargeWe found that total hindcast ballast water discharge into Australian waters more than doubled over thetime period 1999–2012." .
+
+<https://github.com/Acul01/SABLE/id/c042/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1098/rsos.150039> ;
+    cito:disputes id:c042 ;
+    sable:evidenceFor id:c042 ;
+    sable:span "Ballast discharge from bulkers was not effectively modelled via multiple regression in this way,because: (i) calculated ballast capacity and port purpose show strong correlation structure (e." .
+
+<https://github.com/Acul01/SABLE/id/c043/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3989/scimar.2011.75n2301> ;
+    cito:supports id:c043 ;
+    sable:evidenceFor id:c043 ;
+    sable:span "As we observed the smallest recruited juveniles of Mya arenaria (2 mm) throughout the study period, we concluded that the clam is capable of reproducing in the new habitat." .
+
+<https://github.com/Acul01/SABLE/id/c044/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3989/scimar.2011.75n2301> ;
+    cito:supports id:c044 ;
+    sable:evidenceFor id:c044 ;
+    sable:span "Juvenile specimens of Mya arenaria were more abundant in the mid-intertidal zone." .
+
+<https://github.com/Acul01/SABLE/id/c045/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1038/s41598-020-77742-3> ;
+    cito:supports id:c045 ;
+    sable:evidenceFor id:c045 ;
+    sable:span "DiscussionAs expected for species characterized by a direct cycle without a pelagic larval stage, we observed genetically divergent populations even at local scales within small seas such as the Adriatic Sea or the Black Sea." .
+
+<https://github.com/Acul01/SABLE/id/c046/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1038/s41598-020-77742-3> ;
+    sable:evidenceFor id:c046 ;
+    sable:span "Further sampling on the South Eastern and Far Eastern Mediterranean coasts is warranted to locate and clarify the origin of these so far unsampled native haplotypes." .
+
+<https://github.com/Acul01/SABLE/id/c047/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1093/aobpla/plaa059> ;
+    cito:supports id:c047 ;
+    sable:evidenceFor id:c047 ;
+    sable:span "We found that trees in soil with lower N concentrations experienced more herbivory than trees in soil with higher N concentrations." .
+
+<https://github.com/Acul01/SABLE/id/c048/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1093/aobpla/plaa059> ;
+    cito:disputes id:c048 ;
+    sable:evidenceFor id:c048 ;
+    sable:span "rubra trees measured in this study, there was no significant relationship between the extent of leaf herbivory and the N concentrations within leaves (Fig.  2A, r = −0.35, P = 0.26)." .
+
+<https://github.com/Acul01/SABLE/id/c049/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1186/s12862-018-1336-5> ;
+    cito:supports id:c049 ;
+    sable:evidenceFor id:c049 ;
+    sable:span "Results: We found that this species experienced a genetic bottleneck during its invasion lowering its geneticdiversity by 60%." .
+
+<https://github.com/Acul01/SABLE/id/c050/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1002/ece3.5217> ;
+    cito:supports id:c050 ;
+    sable:evidenceFor id:c050 ;
+    sable:span "Here, we show that SHBs can complete an entire life cycle in association with nests of solitary bees Megachile rotundata." .
+
+<https://github.com/Acul01/SABLE/id/c051/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1111/eva.12834> ;
+    cito:supports id:c051 ;
+    sable:evidenceFor id:c051 ;
+    sable:span "No kdr mutations associated with pyrethroid resistance were detected." .
+
+<https://github.com/Acul01/SABLE/id/c052/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3390/insects11080512> ;
+    cito:supports id:c052 ;
+    sable:evidenceFor id:c052 ;
+    sable:span "Preliminary results show increased infestation, damages, and population density of FAW in thedry season." .
+
+<https://github.com/Acul01/SABLE/id/c053/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3897/neobiota.85.103904> ;
+    cito:disputes id:c053 ;
+    sable:evidenceFor id:c053 ;
+    sable:span "χ12 = 33.58, p < 0.001, Fig. 1N), but did not differ between the two habitats for Bostrichidae (spe-cies richness: χ12 = 0.78, p = 0.377, Fig. 1A; abundance: χ12 = 1.05, p = 0.306, Fig. 1B) Figure 1." .
+
+<https://github.com/Acul01/SABLE/id/c054/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.7717/peerj.8103> ;
+    cito:supports id:c054 ;
+    sable:evidenceFor id:c054 ;
+    sable:span "We showed that forest habitat shapedthe community of fungi associated with both species, but the effect was stronger forthe exotic X." .
+
+<https://github.com/Acul01/SABLE/id/c055/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1371/journal.pone.0181397> ;
+    cito:supports id:c055 ;
+    sable:evidenceFor id:c055 ;
+    sable:span "When irrigation is applied, dry stress is alleviated, leading to largerareas modelled climatically suitable compared with previous models, which provided a bet-ter fit with the actual distribution of the species." .
+
+<https://github.com/Acul01/SABLE/id/c056/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3989/ajbm.2452> ;
+    cito:supports id:c056 ;
+    sable:evidenceFor id:c056 ;
+    sable:span "The accuracy scores of  models ranged between 0.918 and 0.981, which shows that our models provide a good performance (Hosmer & Lemeshow, 2000) indica-ting a better discrimination than random chance for the species analyzed (Phillips & al." .
+
+<https://github.com/Acul01/SABLE/id/c057/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.4102/abc.v49i1.2356> ;
+    cito:supports id:c057 ;
+    sable:evidenceFor id:c057 ;
+    sable:span "According to the majority of respondents in Zambia, T. diversifolia has negative impacts on native vegetation, mobility or access, water availability, crop yields and animal health." .
+
+<https://github.com/Acul01/SABLE/id/c058/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3390/d15040496> ;
+    cito:supports id:c058 ;
+    sable:evidenceFor id:c058 ;
+    sable:span "We show the applicability of such a network model to describing invasive pest dynamics and ourresults suggest that the infestation within Richmond Park has largely driven the infestation withinBushy Park." .
+
+<https://github.com/Acul01/SABLE/id/c059/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1111/ddi.13489> ;
+    cito:supports id:c059 ;
+    sable:evidenceFor id:c059 ;
+    sable:span "Precipitation of the driest month (BIO 14) and minimum temperature of the coldest month (BIO 6) were for all species the two most important variables in the models (with the exception of B." .
+
+<https://github.com/Acul01/SABLE/id/c060/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1111/ddi.13489> ;
+    sable:evidenceFor id:c060 ;
+    sable:span "The fact that we did not detect a strong effect of soil variables on species distributions may be due to the spatial resolution of our analysis; we cannot exclude that at a finer scale, soil characteris-tics could be an important driver of local distribution within areas that are otherwise climatically suitable (Thuiller, 2013)." .
+
+<https://github.com/Acul01/SABLE/id/c061/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1002/ecs2.2987> ;
+    cito:supports id:c061 ;
+    sable:evidenceFor id:c061 ;
+    sable:span "Our results indicate thatP. juliflora invasion in Eastern Africa is still at anearly stage and that it is likely to expand its cur-rent geographic range significantly if left uncon-trolled." .
+
+<https://github.com/Acul01/SABLE/id/c062/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1002/ecs2.2987> ;
+    cito:supports id:c062 ;
+    sable:evidenceFor id:c062 ;
+    sable:span "L. camara, by contrast, appears to beapproaching a pseudo-stable equilibrium in East-ern Africa." .
+
+<https://github.com/Acul01/SABLE/id/c063/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3390/f9030117> ;
+    cito:supports id:c063 ;
+    sable:evidenceFor id:c063 ;
+    sable:span "We found that pine plantations and their subsequent invasion in the Patagonian shrubby steppeproduced sharp changes in fine fuel amount and its vertical and horizontal continuity." .
+
+<https://github.com/Acul01/SABLE/id/c064/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3390/f9030117> ;
+    cito:disputes id:c064 ;
+    sable:evidenceFor id:c064 ;
+    sable:span "There were no significant differences in the amount of fine fuels across the vertical distribution andthe horizontal continuity between low and intermediate invasions (Figure 3e,f)." .
+
+<https://github.com/Acul01/SABLE/id/c065/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.1111/1365-2664.14287> ;
+    cito:disputes id:c065 ;
+    sable:evidenceFor id:c065 ;
+    sable:span "Species introduced by means of release (120, 16– 1900), escape (160, 36– 850), as contam-inants (120, 24– 800) or as stowaways (240, 32– 1900) did not differ in their area of occupancy (all estimates in km2; all |t| < 4, p > 0.002)." .
+
+<https://github.com/Acul01/SABLE/id/c066/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3390/su13147541> ;
+    cito:supports id:c066 ;
+    sable:evidenceFor id:c066 ;
+    sable:span "The results showed that activerestoration of the first approach is feasible in the medium-term (3 years after plantationsreaching survival rates >30–40% in average)." .
+
+<https://github.com/Acul01/SABLE/id/c067/evidence> a sable:Evidence ;
+    dcterms:source <https://doi.org/10.3390/su13147541> ;
+    sable:evidenceFor id:c067 ;
+    sable:span "However, the variation in beaver meadowsgreatly affected the performance and effectiveness of the planting and understory removal,e." .
+
+sable:acceptedLabel a rdf:Property ;
+    rdfs:label "label kept by the one-round check" .
+
+sable:agreement a rdf:Property ;
+    rdfs:label "share of five replies with the majority label" ;
+    rdfs:comment "Share of the five replies that emitted the majority label." .
+
+sable:checkedBy a rdf:Property ;
+    rdfs:label "one-round run" .
+
+sable:decision a rdf:Property ;
+    rdfs:label "one-round decision" .
+
+sable:evidenceFor a rdf:Property ;
+    rdfs:label "evidence for" .
+
+sable:evidenceInTopFive a rdf:Property ;
+    rdfs:label "span was in the five chunks" .
+
+sable:goldLabel a rdf:Property ;
+    rdfs:label "human label" .
+
+sable:labelAfterDeletion a rdf:Property ;
+    rdfs:label "temperature-0 label after the span was deleted" .
+
+sable:labelChanged a rdf:Property ;
+    rdfs:label "deleting the span changed the temperature-0 label" ;
+    rdfs:comment "Present only where the evidence span was in the five chunks and was deleted." .
+
+sable:predictedBy a rdf:Property ;
+    rdfs:label "temperature-0 run" .
+
+sable:predictedLabel a rdf:Property ;
+    rdfs:label "temperature-0 label" .
+
+sable:quotesOk a rdf:Property ;
+    rdfs:label "every quote was an exact substring" .
+
+sable:sampledBy a rdf:Property ;
+    rdfs:label "five-reply sample" .
+
+sable:span a rdf:Property ;
+    rdfs:label "annotator span" .
+
+sable:statement a rdf:Property ;
+    rdfs:label "claim text" .
+
+sable:temperature a rdf:Property ;
+    rdfs:label "decoding temperature" .
+
+sable:tokenEntropy a rdf:Property ;
+    rdfs:label "mean token entropy of the majority replies" ;
+    rdfs:comment "Mean Shannon entropy, in bits, of every token in the completion. Each token uses its twenty most likely alternatives, and the remaining probability is one extra outcome. The token mean is averaged over the five replies that emitted the majority label." .
+
+sable:tokenProbability a rdf:Property ;
+    rdfs:label "probability of the first label token" ;
+    rdfs:comment "Probability of the first label token in the one-round check." .
+
+id:c002 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3391/ai.2021.16.1.07> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "unclear" ;
+    sable:labelAfterDeletion "not supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Flow velocity in Lake Texoma controls zebra mussel propagule pressure and establishment." ;
+    sable:tokenEntropy 0.360261 ;
+    sable:tokenProbability 0.9999465956643435 .
+
+id:c004 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3391/bir.2022.11.4.21> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "unclear" ;
+    sable:labelAfterDeletion "not supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "The sampled individuals are enough to date when quagga mussel colonized Lake Garda." ;
+    sable:tokenEntropy 0.446139 ;
+    sable:tokenProbability 0.9394058956879322 .
+
+id:c011 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3390/d12020082> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "unclear" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "The missing difference between paired plots was caused by invasive watermilfoil rather than by total macrophyte biomass." ;
+    sable:tokenEntropy 0.301 ;
+    sable:tokenProbability 0.9958316184148286 .
+
+id:c035 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3391/bir.2022.11.1.02> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "unclear" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Licmophora normaniana in the Siwa spring has been shown to alter the local diatom community." ;
+    sable:tokenEntropy 0.206582 ;
+    sable:tokenProbability 1.0 .
+
+id:c040 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1371/journal.pone.0154201> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "unclear" ;
+    sable:labelAfterDeletion "not supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "The extent of interaction between Didemnum perlucidum and native sessile invertebrates is established." ;
+    sable:tokenEntropy 0.382274 ;
+    sable:tokenProbability 0.9626118507636056 .
+
+id:c046 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1038/s41598-020-77742-3> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:agreement 0.6 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "unclear" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "unclear" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "The origin of the unsampled native Tritia neritea haplotypes on the southeastern and far eastern Mediterranean coasts is resolved." ;
+    sable:tokenEntropy 0.424006 ;
+    sable:tokenProbability 0.421833783331297 .
+
+id:c060 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1111/ddi.13489> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "unclear" ;
+    sable:labelAfterDeletion "not supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Soil characteristics do not matter for where the five hammerhead flatworms can occur." ;
+    sable:tokenEntropy 0.542919 ;
+    sable:tokenProbability 1.0 .
+
+id:c067 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3390/su13147541> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "unclear" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "The same planting treatment worked equally well across beaver meadows." ;
+    sable:tokenEntropy 0.492376 ;
+    sable:tokenProbability 0.9906484013662381 .
+
+<https://doi.org/10.1002/ece3.5217> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1002/ece3.5217" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    dcterms:title "Bees and flowers: How to feed an invasive beetle species" .
+
+<https://doi.org/10.1002/ecs2.2097> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1002/ecs2.2097" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "Impact of an invasive alien plant on litter decomposition along a latitudinal gradient" .
+
+<https://doi.org/10.1007/s10750-020-04318-7> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1007/s10750-020-04318-7" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "Invasive submerged macrophytes complicate management of a shallow boreal lake: a 42-year history of monitoring and restoration attempts in Littoistenjärvi, SW Finland" .
+
+<https://doi.org/10.1038/s41467-018-06995-4> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1038/s41467-018-06995-4" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "Similarity of introduced plant species to native ones facilitates naturalization, but differences enhance invasion success" .
+
+<https://doi.org/10.1093/aobpla/plab042> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1093/aobpla/plab042" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "Consequences of above-ground invasion by non-native plants into restored vernal pools do not prompt same changes in below-ground processes" .
+
+<https://doi.org/10.1111/1365-2664.14287> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1111/1365-2664.14287" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    dcterms:title "Pathways of introduction of alien species in Norway: Analyses of an exhaustive dataset to prioritise management efforts" .
+
+<https://doi.org/10.1111/ddi.13501> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1111/ddi.13501" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "Economic costs of invasive bivalves in freshwater ecosystems" .
+
+<https://doi.org/10.1111/eva.12834> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1111/eva.12834" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    dcterms:title "Phylogeography and invasion history of Aedes aegypti , the Dengue and Zika mosquito vector in Cape Verde islands (West Africa)" .
+
+<https://doi.org/10.1111/eva.13469> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1111/eva.13469" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "Contrasting population genetic responses to migration barriers in two native and an invasive freshwater fish" .
+
+<https://doi.org/10.1186/s12862-015-0296-2> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1186/s12862-015-0296-2" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "Recurrent camouflaged invasions and dispersal of an Asian freshwater gastropod in tropical Africa" .
+
+<https://doi.org/10.1186/s12862-018-1336-5> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1186/s12862-018-1336-5" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    dcterms:title "Supercolonial structure of invasive populations of the tawny crazy ant Nylanderia fulva in the US" .
+
+<https://doi.org/10.1371/journal.pone.0181397> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1371/journal.pone.0181397" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    dcterms:title "Including irrigation in niche modelling of the invasive wasp Vespula germanica (Fabricius) improves model fit to predict potential for further spread" .
+
+<https://doi.org/10.3389/fevo.2022.1080599> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3389/fevo.2022.1080599" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "Associational susceptibility of crop plants caused by the invasive weed Canadian goldenrod, Solidago canadensis, via local aphid species" .
+
+<https://doi.org/10.3389/fmars.2022.983685> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3389/fmars.2022.983685" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    dcterms:title "The invasive alga Gracilaria vermiculophylla in the native northwest Pacific under ocean warming: Southern genetic consequence and northern range expansion" .
+
+<https://doi.org/10.3390/d15040496> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3390/d15040496" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    dcterms:title "Quantifying Invasive Pest Dynamics through Inference of a Two-Node Epidemic Network Model" .
+
+<https://doi.org/10.3390/f13020273> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3390/f13020273" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "Non-Native Forest Tree Species in Europe: The Question of Seed Origin in Afforestation" .
+
+<https://doi.org/10.3390/insects11080512> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3390/insects11080512" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    dcterms:title "Seasonal Dynamics of the Alien Invasive Insect Pest Spodoptera frugiperda Smith (Lepidoptera: Noctuidae) in Manica Province, Central Mozambique" .
+
+<https://doi.org/10.3390/insects13100877> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3390/insects13100877" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "A New Aculodes Species (Prostigmata: Eriophyidae) Described from an Invasive Weed by Morphological, Morphometric and DNA Barcode Analyses" .
+
+<https://doi.org/10.3390/plants11152059> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3390/plants11152059" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "Comparative Analysis of Tolerance to Salt Stress and Water Deficit in Two Invasive Weeds of the Genus Erigeron (Asteraceae)" .
+
+<https://doi.org/10.3391/ai.2022.17.1.01> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3391/ai.2022.17.1.01" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    dcterms:title "Invading grass-like alga transforms rippled sand bars into bumpy muddy flats: arrival of a game changer in the Wadden Sea?" .
+
+<https://doi.org/10.3391/mbi.2017.8.3.17> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3391/mbi.2017.8.3.17" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "Non-native fish dispersal as a contaminant of aquatic plant consignments – a case study from England" .
+
+<https://doi.org/10.3897/italianbotanist.11.68063> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3897/italianbotanist.11.68063" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "Notulae to the Italian alien vascular flora: 11" .
+
+<https://doi.org/10.3897/neobiota.71.69716> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3897/neobiota.71.69716" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "Plant invasions in riparian areas of the Middle Danube Basin in Serbia" .
+
+<https://doi.org/10.3897/neobiota.85.103904> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3897/neobiota.85.103904" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    dcterms:title "Investigating beetle communities in and around entry points can improve surveillance at national and international scale" .
+
+<https://doi.org/10.3989/ajbm.2452> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3989/ajbm.2452" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    dcterms:title "An invasion risk map for non-native aquatic macrophytes of the Iberian Peninsula" .
+
+<https://doi.org/10.3989/ajbm.2623> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3989/ajbm.2623" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "Invasion risks and social interest of non-native woody plants in urban parks of mainland Spain" .
+
+<https://doi.org/10.4102/abc.v49i1.2356> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.4102/abc.v49i1.2356" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    dcterms:title "Distribution of invasive alien Tithonia (Asteraceae) species in eastern and southern Africa and the socio-ecological impacts of T. diversifolia in Zambia" .
+
+<https://doi.org/10.7717/peerj.6479> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.7717/peerj.6479" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    dcterms:title "Potential invasive plant expansion in global ecoregions under climate change" .
+
+<https://doi.org/10.7717/peerj.8103> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.7717/peerj.8103" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    dcterms:title "Acquisition of fungi from the environment modifies ambrosia beetle mycobiome during invasion" .
+
+id:c001 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3391/ai.2021.16.1.07> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "In Lake Texoma, densities of zebra mussel veligers and post-veligers were lower at western sites with lower water clarity, higher salinity, and higher productivity." ;
+    sable:tokenEntropy 0.148878 ;
+    sable:tokenProbability 1.0 .
+
+id:c003 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3391/bir.2022.11.4.21> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Quagga mussel was recorded for the first time in Italy, in Lake Garda, and identified by morphology and the mitochondrial COI gene." ;
+    sable:tokenEntropy 0.334316 ;
+    sable:tokenProbability 1.0 .
+
+id:c005 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1007/s10530-021-02644-y> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Combined crayfish-tissue and water samples detected Aphanomyces astaci DNA above the limit of detection in invasive crayfish populations." ;
+    sable:tokenEntropy 0.292397 ;
+    sable:tokenProbability 0.9995842844317191 .
+
+id:c006 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1007/s10530-021-02644-y> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 0.6 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "not supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Larger crayfish yielded higher detection rates of Aphanomyces astaci." ;
+    sable:tokenEntropy 0.539192 ;
+    sable:tokenProbability 0.7955014139195373 .
+
+id:c007 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1186/s12862-015-0296-2> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Melanoides tuberculata reached Lakes Malawi and Tanganyika, the Congo River, Nigeria and Cameroon in several independent invasions from Asia." ;
+    sable:tokenEntropy 0.387087 ;
+    sable:tokenProbability 0.9999961853100103 .
+
+id:c008 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.4102/abc.v47i2.2177> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "A FISK score of 14 separated freshwater fishes that could become invasive in South Africa from those unlikely to do so." ;
+    sable:tokenEntropy 0.125883 ;
+    sable:tokenProbability 0.9999961853100103 .
+
+id:c009 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.4102/abc.v47i2.2177> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Of three fishes proposed for aquaculture, Silurus glanis had a high risk of becoming invasive in South Africa and Oncorhynchus tshawytscha was unlikely to be invasive." ;
+    sable:tokenEntropy 0.192685 ;
+    sable:tokenProbability 0.9999961853100103 .
+
+id:c010 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3390/d12020082> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "not supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged true ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Invasive watermilfoil reduced standing crops and gross primary production of other littoral primary producers." ;
+    sable:tokenEntropy 0.412881 ;
+    sable:tokenProbability 1.0 .
+
+id:c012 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1111/ddi.13501> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Reported global costs of invasive freshwater bivalves summed to 63.7 billion 2017 US dollars from 1980 to 2020." ;
+    sable:tokenEntropy 0.26682 ;
+    sable:tokenProbability 1.0 .
+
+id:c013 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1002/ece3.9493> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Freshwater fish species richness increased with the degree of invasion in the studied Italian sites." ;
+    sable:tokenEntropy 0.37665 ;
+    sable:tokenProbability 1.0 .
+
+id:c014 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1002/ece3.9493> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "not supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Native and non-native freshwater fishes differed in their contribution to beta diversity." ;
+    sable:tokenEntropy 0.385706 ;
+    sable:tokenProbability 0.9957784366888215 .
+
+id:c015 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1111/eva.13469> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Among the three fishes, population genetic differentiation was strongest in three-spined stickleback and weakest in invasive topmouth gudgeon." ;
+    sable:tokenEntropy 0.267528 ;
+    sable:tokenProbability 0.9992792820588283 .
+
+id:c016 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3389/fpls.2019.00647> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Ludwigia hexapetala had higher photosynthetic efficiency and tolerated higher light than Nelumbo nucifera and the native macrophytes." ;
+    sable:tokenEntropy 0.136319 ;
+    sable:tokenProbability 0.9999923706345725 .
+
+id:c017 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3389/fpls.2019.00647> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "not supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "The photophysiology of invasive Nelumbo differed from that of the native macrophytes." ;
+    sable:tokenEntropy 0.488026 ;
+    sable:tokenProbability 0.9999923706345725 .
+
+id:c018 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1111/geb.13051> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "not supported" ;
+    sable:labelAfterDeletion "not supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Temperature had a significant effect on invasion of every freshwater group in the English dataset." ;
+    sable:tokenEntropy 0.228318 ;
+    sable:tokenProbability 1.0 .
+
+id:c019 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1111/geb.13051> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Connectivity to human activity, measured along the hydrological network, explained freshwater invasion better than simple proxies of human pressure." ;
+    sable:tokenEntropy 0.236215 ;
+    sable:tokenProbability 0.999073458069751 .
+
+id:c020 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1007/s10750-020-04318-7> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "After the third Elodea collapse, submerged macrophytes did not recover and Littoistenjärvi stayed hypertrophic with cyanobacterial blooms." ;
+    sable:tokenEntropy 0.177788 ;
+    sable:tokenProbability 0.9999923706345725 .
+
+id:c021 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3989/ajbm.2623> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Only Ficus benjamina, among 388 non-native woody plants in Spanish urban parks, had no potential to invade." ;
+    sable:tokenEntropy 0.343072 ;
+    sable:tokenProbability 1.0 .
+
+id:c022 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1093/aobpla/plab042> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "not supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Invasion of restored vernal pools shifted soil C:N and microbial biomass relative to natural reference pools." ;
+    sable:tokenEntropy 0.367075 ;
+    sable:tokenProbability 1.0 .
+
+id:c023 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1002/ecs2.2097> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "not supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Green tea litter decomposed faster in plots invaded by Impatiens glandulifera than in control plots." ;
+    sable:tokenEntropy 0.479407 ;
+    sable:tokenProbability 0.9999618537549303 .
+
+id:c024 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3390/f13020273> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "National provenance recommendations exist for several non-native forest trees planted in Europe, including Douglas fir." ;
+    sable:tokenEntropy 0.500534 ;
+    sable:tokenProbability 0.9999961853100103 .
+
+id:c025 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3389/fevo.2022.1080599> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Brachycaudus helichrysi and Aulacorthum solani were the two most frequent aphids on both Canadian goldenrod and the crop plants." ;
+    sable:tokenEntropy 0.441194 ;
+    sable:tokenProbability 0.995337897345981 .
+
+id:c026 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3390/insects13100877> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Aculodes marcelli from cheatgrass is a different species from A. altamurgiensis, with 17.7 percent COI divergence." ;
+    sable:tokenEntropy 0.306008 ;
+    sable:tokenProbability 0.9999732974756593 .
+
+id:c027 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3897/italianbotanist.11.68063> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "The contribution reports new records, confirmations, exclusions and status changes of vascular plants alien to Italy." ;
+    sable:tokenEntropy 0.193654 ;
+    sable:tokenProbability 1.0 .
+
+id:c028 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3391/mbi.2017.8.3.17> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Pumpkinseed was introduced into an English angling lake as a contaminant of a native aquatic-plant consignment." ;
+    sable:tokenEntropy 0.230894 ;
+    sable:tokenProbability 1.0 .
+
+id:c029 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1038/s41467-018-06995-4> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "In six Central European habitats, naturalized non-invasive plants were functionally similar to native plants, while invasive plants occupied the edge of trait space." ;
+    sable:tokenEntropy 0.314777 ;
+    sable:tokenProbability 1.0 .
+
+id:c030 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3897/neobiota.71.69716> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Proximity of riparian sites to roads, railway lines and housing was not related to the level of plant invasion." ;
+    sable:tokenEntropy 0.253303 ;
+    sable:tokenProbability 1.0 .
+
+id:c031 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.7717/peerj.6479> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Hotspots of potential invasive-plant expansion under climate change include Northern Europe, the UK, South America, North America, southwest China and New Zealand." ;
+    sable:tokenEntropy 0.116998 ;
+    sable:tokenProbability 1.0 .
+
+id:c032 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3390/plants11152059> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/plant> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Seed germination of Erigeron bonariensis and E. sumatrensis was reduced more by NaCl than by polyethylene glycol." ;
+    sable:tokenEntropy 0.348978 ;
+    sable:tokenProbability 0.9995575930080336 .
+
+id:c033 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3391/ai.2022.17.1.01> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "A Vaucheria turf near Sylt expanded over about 180 ha within three years and trapped fine sediment." ;
+    sable:tokenEntropy 0.318906 ;
+    sable:tokenProbability 0.9999885559736865 .
+
+id:c034 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3391/bir.2022.11.1.02> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "The marine diatom Licmophora normaniana was found in an inland mineral spring in the Siwa Oasis, Egypt." ;
+    sable:tokenEntropy 0.256672 ;
+    sable:tokenProbability 1.0 .
+
+id:c036 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1007/s10530-022-02839-x> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Idotea balthica reduced activity when exposed to cues of native perch." ;
+    sable:tokenEntropy 0.608788 ;
+    sable:tokenProbability 0.9923504224912828 .
+
+id:c037 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1007/s10530-022-02839-x> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "not supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Idotea balthica showed anti-predator behaviour when exposed to cues of the invasive crab Rhithropanopeus harrisii." ;
+    sable:tokenEntropy 0.280314 ;
+    sable:tokenProbability 1.0 .
+
+id:c038 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3389/fmars.2022.983685> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Sea surface temperature in northern Japan and the East China Sea rose by about 0.25 to 0.4 degrees Celsius per decade from 1978 to 2018." ;
+    sable:tokenEntropy 0.267642 ;
+    sable:tokenProbability 0.9999771120783387 .
+
+id:c039 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1371/journal.pone.0154201> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Didemnum perlucidum in the Swan River estuary was concentrated near infrastructure, especially mooring buoys." ;
+    sable:tokenEntropy 0.311082 ;
+    sable:tokenProbability 1.0 .
+
+id:c041 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1098/rsos.150039> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Hindcast ballast-water discharge into Australian waters more than doubled between 1999 and 2012." ;
+    sable:tokenEntropy 0.270348 ;
+    sable:tokenProbability 1.0 .
+
+id:c042 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1098/rsos.150039> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "not supported" ;
+    sable:labelAfterDeletion "not supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Multiple regression effectively modelled ballast-water discharge from bulk carriers." ;
+    sable:tokenEntropy 0.348226 ;
+    sable:tokenProbability 1.0 .
+
+id:c043 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3989/scimar.2011.75n2301> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Mya arenaria reproduced in the Tagus estuary, as shown by recruited juveniles of about 2 mm throughout the study." ;
+    sable:tokenEntropy 0.316 ;
+    sable:tokenProbability 1.0 .
+
+id:c044 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3989/scimar.2011.75n2301> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Juvenile Mya arenaria were more abundant in the mid-intertidal, while juvenile Scrobicularia plana were mainly in the upper intertidal." ;
+    sable:tokenEntropy 0.174212 ;
+    sable:tokenProbability 1.0 .
+
+id:c045 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1038/s41598-020-77742-3> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Tritia neritea in its native range showed strong genetic structure even at local scales within the Adriatic and the Black Sea." ;
+    sable:tokenEntropy 0.459653 ;
+    sable:tokenProbability 0.9926419500707588 .
+
+id:c047 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1093/aobpla/plaa059> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Red oaks in soil with lower nitrogen concentrations experienced more gypsy-moth herbivory than trees in soil with higher nitrogen." ;
+    sable:tokenEntropy 0.146493 ;
+    sable:tokenProbability 1.0 .
+
+id:c048 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1093/aobpla/plaa059> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "not supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Within red oak trees, heavier gypsy-moth herbivory occurred on leaves with higher nitrogen concentrations." ;
+    sable:tokenEntropy 0.256924 ;
+    sable:tokenProbability 0.9999008227894784 .
+
+id:c049 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1186/s12862-018-1336-5> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "The invasion of Nylanderia fulva into the United States passed through a bottleneck that lowered genetic diversity by about 60 percent." ;
+    sable:tokenEntropy 0.232397 ;
+    sable:tokenProbability 1.0 .
+
+id:c050 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1002/ece3.5217> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Small hive beetles completed a life cycle in nests of the solitary bee Megachile rotundata, and flowers served as alternative food." ;
+    sable:tokenEntropy 0.28197 ;
+    sable:tokenProbability 0.9999847413273523 .
+
+id:c051 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1111/eva.12834> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Aedes aegypti in Cape Verde showed no kdr mutations associated with pyrethroid resistance in the sampled mosquitoes." ;
+    sable:tokenEntropy 0.098768 ;
+    sable:tokenProbability 0.9984486228444831 .
+
+id:c052 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3390/insects11080512> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Fall armyworm infestation and damage in central Mozambique were higher in the dry season than in the rainy season." ;
+    sable:tokenEntropy 0.369002 ;
+    sable:tokenProbability 1.0 .
+
+id:c053 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3897/neobiota.85.103904> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "not supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Bostrichid beetle richness and abundance differed between Spanish port areas and the surrounding natural areas." ;
+    sable:tokenEntropy 0.113385 ;
+    sable:tokenProbability 0.9999961853100103 .
+
+id:c054 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.7717/peerj.8103> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Forest habitat shaped the fungal communities of both ambrosia beetles, with a stronger effect on the exotic Xylosandrus germanus." ;
+    sable:tokenEntropy 0.339956 ;
+    sable:tokenProbability 1.0 .
+
+id:c055 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1371/journal.pone.0181397> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Adding irrigation to the CLIMEX model changed the predicted potential distribution of Vespula germanica in dry regions." ;
+    sable:tokenEntropy 0.423102 ;
+    sable:tokenProbability 0.9999885559736865 .
+
+id:c056 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3989/ajbm.2452> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:agreement 0.8 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "MaxEnt models for 20 non-native aquatic macrophytes in Iberia discriminated suitable from unsuitable areas with high accuracy." ;
+    sable:tokenEntropy 0.599013 ;
+    sable:tokenProbability 0.5134027566736951 .
+
+id:c057 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.4102/abc.v49i1.2356> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Most respondents in Zambia reported that Tithonia diversifolia reduces native vegetation, access, water, crop yields and animal health." ;
+    sable:tokenEntropy 0.22566 ;
+    sable:tokenProbability 0.9997825858937324 .
+
+id:c058 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3390/d15040496> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "In the fitted two-node model, oak processionary moth infestation in Richmond Park largely drove infestation in neighbouring Bushy Park." ;
+    sable:tokenEntropy 0.187326 ;
+    sable:tokenProbability 0.9997215658695886 .
+
+id:c059 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1111/ddi.13489> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:acceptedLabel "supported" ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "accept" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk true ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "For all five modelled hammerhead flatworms, climate variables outweighed soil variables, led by precipitation of the driest month and minimum temperature of the coldest month." ;
+    sable:tokenEntropy 0.350362 ;
+    sable:tokenProbability 0.9999694828875315 .
+
+id:c061 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1002/ecs2.2987> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Prosopis juliflora in Eastern Africa is still early in its invasion and is likely to expand if it is not controlled." ;
+    sable:tokenEntropy 0.543921 ;
+    sable:tokenProbability 0.9999961853100103 .
+
+id:c062 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1002/ecs2.2987> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "not supported" ;
+    sable:labelChanged true ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Lantana camara in Eastern Africa is closer to a pseudo-stable equilibrium than Prosopis juliflora." ;
+    sable:tokenEntropy 0.174558 ;
+    sable:tokenProbability 0.9999847413273523 .
+
+id:c063 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3390/f9030117> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive true ;
+    sable:goldLabel "supported" ;
+    sable:labelAfterDeletion "supported" ;
+    sable:labelChanged false ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Pine plantations and pine invasion in the Patagonian shrubby steppe increased the amount and continuity of fine fuels." ;
+    sable:tokenEntropy 0.307217 ;
+    sable:tokenProbability 0.9999961853100103 .
+
+id:c064 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3390/f9030117> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "not supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Low and intermediate pine invasions differed in the amount and vertical distribution of fine fuels." ;
+    sable:tokenEntropy 0.563351 ;
+    sable:tokenProbability 0.9374370098477451 .
+
+id:c065 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.1111/1365-2664.14287> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "not supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "In Norway, alien species introduced by escape, as contaminants or as stowaways differed in their area of occupancy." ;
+    sable:tokenEntropy 0.64658 ;
+    sable:tokenProbability 0.9989667512105311 .
+
+id:c066 a sable:Hypothesis ;
+    dcterms:source <https://doi.org/10.3390/su13147541> ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    sable:agreement 1.0 ;
+    sable:checkedBy <https://github.com/Acul01/SABLE/id/run/v2a> ;
+    sable:decision "abstain" ;
+    sable:evidenceInTopFive false ;
+    sable:goldLabel "supported" ;
+    sable:predictedBy <https://github.com/Acul01/SABLE/id/run/temperature-0> ;
+    sable:predictedLabel "not supported" ;
+    sable:quotesOk false ;
+    sable:sampledBy <https://github.com/Acul01/SABLE/id/run/sample-5> ;
+    sable:statement "Active planting of Nothofagus in abandoned beaver ponds in Tierra del Fuego reached average survival above 30 to 40 percent after three years." ;
+    sable:tokenEntropy 0.632643 ;
+    sable:tokenProbability 0.976764227247701 .
+
+<https://github.com/Acul01/SABLE/id/model/gpt-4o-mini> a prov:SoftwareAgent ;
+    rdfs:label "gpt-4o-mini" .
+
+<https://doi.org/10.1002/ece3.9493> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1002/ece3.9493" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "How does invasion degree shape alpha and beta diversity of freshwater fish at a regional scale?" .
+
+<https://doi.org/10.1002/ecs2.2987> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1002/ecs2.2987" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    dcterms:title "Niche change analysis as a tool to inform management of two invasive species in Eastern Africa" .
+
+<https://doi.org/10.1007/s10530-021-02644-y> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1007/s10530-021-02644-y" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "Parasite DNA detection in water samples enhances crayfish plague monitoring in asymptomatic invasive populations" .
+
+<https://doi.org/10.1007/s10530-022-02839-x> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1007/s10530-022-02839-x" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    dcterms:title "Lack of anti-predator recognition in a marine isopod under the threat of an invasive predatory crab" .
+
+<https://doi.org/10.1038/s41598-020-77742-3> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1038/s41598-020-77742-3" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    dcterms:title "Chaotic genetic structure and past demographic expansion of the invasive gastropod Tritia neritea in its native range, the Mediterranean Sea" .
+
+<https://doi.org/10.1093/aobpla/plaa059> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1093/aobpla/plaa059" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/insect> ;
+    dcterms:title "Defoliation severity is positively related to soil solution nitrogen availability and negatively related to soil nitrogen concentrations following a multi-year invasive insect irruption" .
+
+<https://doi.org/10.1098/rsos.150039> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1098/rsos.150039" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    dcterms:title "Temporal modelling of ballast water discharge and ship-mediated invasion risk to Australia" .
+
+<https://doi.org/10.1111/ddi.13489> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1111/ddi.13489" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    dcterms:title "Hammerhead worms everywhere? Modelling the invasion of bipaliin flatworms in a changing climate" .
+
+<https://doi.org/10.1111/geb.13051> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1111/geb.13051" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "Invasion of freshwater ecosystems is promoted by network connectivity to hotspots of human activity" .
+
+<https://doi.org/10.1371/journal.pone.0154201> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.1371/journal.pone.0154201" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    dcterms:title "Distribution and Localised Effects of the Invasive Ascidian Didemnum perlucidum (Monniot 1983) in an Urban Estuary" .
+
+<https://doi.org/10.3389/fpls.2019.00647> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3389/fpls.2019.00647" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "Aspects of Invasiveness of Ludwigia and Nelumbo in Shallow Temperate Fluvial Lakes" .
+
+<https://doi.org/10.3390/d12020082> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3390/d12020082" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "Effects of Invasive Watermilfoil on Primary Production in Littoral Zones of North-Temperate Lakes" .
+
+<https://doi.org/10.3390/f9030117> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3390/f9030117" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    dcterms:title "Pine Plantations and Invasion Alter Fuel Structure and Potential Fire Behavior in a Patagonian Forest-Steppe Ecotone" .
+
+<https://doi.org/10.3390/su13147541> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3390/su13147541" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/other> ;
+    dcterms:title "Landscape Variables Influence over Active Restoration Strategies of Nothofagus Forests Degraded by Invasive Castor canadensis in Tierra del Fuego" .
+
+<https://doi.org/10.3391/ai.2021.16.1.07> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3391/ai.2021.16.1.07" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "Spatial variation in propagule pressure and establishment of zebra mussels (Dreissena polymorpha) within a subtropical reservoir" .
+
+<https://doi.org/10.3391/bir.2022.11.1.02> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3391/bir.2022.11.1.02" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    dcterms:title "A marine invasive benthic diatom species [Licmophora normaniana (Greville) Wahrer, 1985] in an inland oasis mineral spring in Egypt" .
+
+<https://doi.org/10.3391/bir.2022.11.4.21> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3391/bir.2022.11.4.21" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "First record of quagga mussel, Dreissena bugensis Andrusov, 1897, in Italy: morphological and genetic evidence in Lake Garda" .
+
+<https://doi.org/10.3989/scimar.2011.75n2301> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.3989/scimar.2011.75n2301" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/marine> ;
+    dcterms:title "A field experiment on the reproductive success of the invasive clam Mya arenaria (Bivalvia) in the Tagus estuary: coexistence with the native clam Scrobicularia plana" .
+
+<https://doi.org/10.4102/abc.v47i2.2177> a schema:ScholarlyArticle ;
+    dcterms:identifier "10.4102/abc.v47i2.2177" ;
+    dcterms:subject <https://github.com/Acul01/SABLE/id/theme/freshwater> ;
+    dcterms:title "Evaluating invasion risk for freshwater fishes in South Africa" .
+
+<https://github.com/Acul01/SABLE/id/theme/insect> a skos:Concept ;
+    skos:prefLabel "insect" .
+
+<https://github.com/Acul01/SABLE/id/theme/other> a skos:Concept ;
+    skos:prefLabel "other" .
+
+<https://github.com/Acul01/SABLE/id/theme/marine> a skos:Concept ;
+    skos:prefLabel "marine" .
+
+<https://github.com/Acul01/SABLE/id/theme/plant> a skos:Concept ;
+    skos:prefLabel "plant" .
+
+<https://github.com/Acul01/SABLE/id/theme/freshwater> a skos:Concept ;
+    skos:prefLabel "freshwater" .
+
+<https://github.com/Acul01/SABLE/id/run/sample-5> a prov:Activity ;
+    rdfs:label "five full replies" ;
+    prov:wasAssociatedWith <https://github.com/Acul01/SABLE/id/model/gpt-4o-mini> ;
+    sable:temperature 0.7 .
+
+<https://github.com/Acul01/SABLE/id/run/temperature-0> a prov:Activity ;
+    rdfs:label "temperature-0 label" ;
+    prov:wasAssociatedWith <https://github.com/Acul01/SABLE/id/model/gpt-4o-mini> ;
+    sable:temperature 0.0 .
+
+<https://github.com/Acul01/SABLE/id/run/v2a> a prov:Activity ;
+    rdfs:label "one-round check" ;
+    prov:wasAssociatedWith <https://github.com/Acul01/SABLE/id/model/gpt-4o-mini> ;
+    sable:temperature 0.0 .
+

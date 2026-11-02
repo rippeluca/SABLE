@@ -1,0 +1,336 @@
+claim_id,sample,label,token_entropy,n_tokens
+c001,0,supported,0.145131,50
+c001,1,supported,0.156076,50
+c001,2,supported,0.192078,50
+c001,3,supported,0.136878,55
+c001,4,supported,0.114227,55
+c002,0,not supported,0.258386,51
+c002,1,not supported,0.354018,50
+c002,2,not supported,0.481935,43
+c002,3,not supported,0.353031,49
+c002,4,not supported,0.353937,49
+c003,0,supported,0.315849,44
+c003,1,supported,0.376893,46
+c003,2,supported,0.338511,47
+c003,3,supported,0.336666,46
+c003,4,supported,0.303663,44
+c004,0,not supported,0.431144,50
+c004,1,not supported,0.377076,55
+c004,2,not supported,0.490281,55
+c004,3,not supported,0.494541,53
+c004,4,not supported,0.437655,57
+c005,0,supported,0.260330,48
+c005,1,supported,0.309414,51
+c005,2,supported,0.292009,51
+c005,3,supported,0.332970,51
+c005,4,supported,0.267264,52
+c006,0,not supported,0.424438,59
+c006,1,not supported,0.585434,53
+c006,2,unclear,0.852376,52
+c006,3,not supported,0.607703,69
+c006,4,unclear,0.777652,61
+c007,0,supported,0.402956,40
+c007,1,supported,0.333586,45
+c007,2,supported,0.329231,46
+c007,3,supported,0.456262,45
+c007,4,supported,0.413398,49
+c008,0,supported,0.123329,57
+c008,1,supported,0.134480,58
+c008,2,supported,0.124547,57
+c008,3,supported,0.120969,57
+c008,4,supported,0.126091,57
+c009,0,supported,0.162107,47
+c009,1,supported,0.262872,56
+c009,2,supported,0.186454,55
+c009,3,supported,0.177393,55
+c009,4,supported,0.174598,55
+c010,0,not supported,0.436472,41
+c010,1,not supported,0.492829,56
+c010,2,not supported,0.415191,50
+c010,3,not supported,0.356681,52
+c010,4,not supported,0.363233,57
+c011,0,not supported,0.259678,51
+c011,1,not supported,0.252303,56
+c011,2,not supported,0.207605,55
+c011,3,not supported,0.375259,64
+c011,4,not supported,0.410154,65
+c012,0,supported,0.276115,54
+c012,1,supported,0.258036,53
+c012,2,supported,0.274054,55
+c012,3,supported,0.250019,54
+c012,4,supported,0.275878,56
+c013,0,not supported,0.393005,40
+c013,1,not supported,0.454009,45
+c013,2,not supported,0.397320,46
+c013,3,not supported,0.190792,48
+c013,4,not supported,0.448126,41
+c014,0,not supported,0.286824,35
+c014,1,not supported,0.454646,40
+c014,2,not supported,0.389527,47
+c014,3,not supported,0.247106,41
+c014,4,not supported,0.550427,58
+c015,0,supported,0.331482,50
+c015,1,supported,0.219423,48
+c015,2,supported,0.163317,44
+c015,3,supported,0.289396,52
+c015,4,supported,0.334024,50
+c016,0,supported,0.147678,52
+c016,1,supported,0.138121,53
+c016,2,supported,0.131084,52
+c016,3,supported,0.132016,52
+c016,4,supported,0.132696,52
+c017,0,supported,0.528358,47
+c017,1,supported,0.497888,45
+c017,2,supported,0.397661,44
+c017,3,supported,0.501335,53
+c017,4,supported,0.514887,48
+c018,0,not supported,0.268074,44
+c018,1,not supported,0.180466,43
+c018,2,not supported,0.275863,47
+c018,3,not supported,0.261663,43
+c018,4,not supported,0.155523,35
+c019,0,supported,0.271047,51
+c019,1,supported,0.221626,43
+c019,2,supported,0.217996,44
+c019,3,supported,0.217399,47
+c019,4,supported,0.253009,49
+c020,0,supported,0.166816,55
+c020,1,supported,0.167438,56
+c020,2,supported,0.193025,51
+c020,3,supported,0.194853,52
+c020,4,supported,0.166807,56
+c021,0,supported,0.298247,35
+c021,1,supported,0.328262,52
+c021,2,supported,0.392881,47
+c021,3,supported,0.298202,35
+c021,4,supported,0.397770,63
+c022,0,not supported,0.472151,56
+c022,1,not supported,0.367838,51
+c022,2,not supported,0.299988,45
+c022,3,not supported,0.347796,51
+c022,4,not supported,0.347600,54
+c023,0,not supported,0.564806,56
+c023,1,not supported,0.454230,53
+c023,2,not supported,0.478854,50
+c023,3,not supported,0.500305,53
+c023,4,not supported,0.398842,65
+c024,0,supported,0.526878,45
+c024,1,supported,0.436235,43
+c024,2,supported,0.542539,44
+c024,3,supported,0.495847,43
+c024,4,supported,0.501171,39
+c025,0,not supported,0.500825,86
+c025,1,not supported,0.427842,68
+c025,2,not supported,0.421664,74
+c025,3,not supported,0.430806,68
+c025,4,not supported,0.424833,71
+c026,0,supported,0.235452,59
+c026,1,supported,0.427708,56
+c026,2,supported,0.344760,53
+c026,3,supported,0.265185,53
+c026,4,supported,0.256933,52
+c027,0,supported,0.180433,44
+c027,1,supported,0.192650,45
+c027,2,supported,0.188699,43
+c027,3,supported,0.208943,45
+c027,4,supported,0.197544,43
+c028,0,supported,0.194359,43
+c028,1,supported,0.266467,38
+c028,2,supported,0.316947,47
+c028,3,supported,0.181257,42
+c028,4,supported,0.195441,43
+c029,0,supported,0.372516,48
+c029,1,supported,0.292791,44
+c029,2,supported,0.333689,50
+c029,3,supported,0.315199,45
+c029,4,supported,0.259692,44
+c030,0,supported,0.225335,59
+c030,1,supported,0.232965,53
+c030,2,supported,0.262161,76
+c030,3,supported,0.238642,50
+c030,4,supported,0.307411,50
+c031,0,supported,0.111095,51
+c031,1,supported,0.119416,52
+c031,2,supported,0.124076,53
+c031,3,supported,0.114591,53
+c031,4,supported,0.115814,53
+c032,0,supported,0.310668,75
+c032,1,supported,0.388146,52
+c032,2,supported,0.306822,48
+c032,3,supported,0.444797,70
+c032,4,supported,0.294455,48
+c033,0,supported,0.260012,50
+c033,1,supported,0.315111,49
+c033,2,supported,0.287561,49
+c033,3,supported,0.435079,46
+c033,4,supported,0.296765,49
+c034,0,supported,0.246377,46
+c034,1,supported,0.184078,47
+c034,2,supported,0.288222,53
+c034,3,supported,0.219722,45
+c034,4,supported,0.344962,51
+c035,0,supported,0.208840,47
+c035,1,supported,0.214453,47
+c035,2,supported,0.199375,52
+c035,3,supported,0.213393,47
+c035,4,supported,0.196850,48
+c036,0,not supported,0.541616,51
+c036,1,not supported,0.644238,64
+c036,2,not supported,0.620634,63
+c036,3,not supported,0.581485,50
+c036,4,not supported,0.655969,58
+c037,0,not supported,0.304103,67
+c037,1,not supported,0.224478,57
+c037,2,not supported,0.263062,58
+c037,3,not supported,0.324879,66
+c037,4,not supported,0.285046,61
+c038,0,supported,0.309902,80
+c038,1,supported,0.247702,58
+c038,2,supported,0.304318,57
+c038,3,supported,0.241495,62
+c038,4,supported,0.234792,63
+c039,0,supported,0.291436,45
+c039,1,supported,0.269406,47
+c039,2,supported,0.263227,50
+c039,3,supported,0.360389,51
+c039,4,supported,0.370954,49
+c040,0,not supported,0.396669,57
+c040,1,not supported,0.307337,57
+c040,2,not supported,0.503468,56
+c040,3,not supported,0.478891,48
+c040,4,not supported,0.225003,49
+c041,0,supported,0.244316,42
+c041,1,supported,0.374458,45
+c041,2,supported,0.277242,42
+c041,3,supported,0.195736,41
+c041,4,supported,0.259986,42
+c042,0,not supported,0.399842,50
+c042,1,not supported,0.280249,41
+c042,2,not supported,0.312142,39
+c042,3,not supported,0.307922,47
+c042,4,not supported,0.440973,46
+c043,0,supported,0.261018,55
+c043,1,supported,0.253081,60
+c043,2,supported,0.324875,60
+c043,3,supported,0.362527,54
+c043,4,supported,0.378500,52
+c044,0,supported,0.207574,54
+c044,1,supported,0.171432,55
+c044,2,supported,0.156633,58
+c044,3,supported,0.162455,58
+c044,4,supported,0.172967,56
+c045,0,supported,0.601908,45
+c045,1,supported,0.331065,54
+c045,2,supported,0.404307,53
+c045,3,supported,0.445503,55
+c045,4,supported,0.515482,52
+c046,0,unclear,0.389165,58
+c046,1,not supported,0.448031,65
+c046,2,supported,0.301626,53
+c046,3,unclear,0.415829,60
+c046,4,unclear,0.467024,42
+c047,0,supported,0.136211,45
+c047,1,supported,0.196663,45
+c047,2,supported,0.140538,45
+c047,3,supported,0.135977,45
+c047,4,supported,0.123076,45
+c048,0,not supported,0.321387,52
+c048,1,not supported,0.302868,51
+c048,2,not supported,0.326199,48
+c048,3,not supported,0.166955,54
+c048,4,not supported,0.167210,52
+c049,0,supported,0.249907,54
+c049,1,supported,0.234195,57
+c049,2,supported,0.216779,50
+c049,3,supported,0.259853,54
+c049,4,supported,0.201249,46
+c050,0,supported,0.263935,48
+c050,1,supported,0.285128,55
+c050,2,supported,0.269547,55
+c050,3,supported,0.310928,56
+c050,4,supported,0.280314,55
+c051,0,supported,0.106896,47
+c051,1,supported,0.110570,47
+c051,2,supported,0.093096,46
+c051,3,supported,0.092836,46
+c051,4,supported,0.090440,46
+c052,0,supported,0.323559,48
+c052,1,supported,0.382982,53
+c052,2,supported,0.491562,50
+c052,3,supported,0.288152,60
+c052,4,supported,0.358754,47
+c053,0,not supported,0.106409,40
+c053,1,not supported,0.108052,40
+c053,2,not supported,0.109849,40
+c053,3,not supported,0.110524,40
+c053,4,not supported,0.132093,45
+c054,0,supported,0.362418,55
+c054,1,supported,0.324668,54
+c054,2,supported,0.339405,54
+c054,3,supported,0.351305,47
+c054,4,supported,0.321983,57
+c055,0,supported,0.453567,60
+c055,1,supported,0.427045,63
+c055,2,supported,0.423282,54
+c055,3,supported,0.410269,50
+c055,4,supported,0.401349,50
+c056,0,supported,0.558599,46
+c056,1,unclear,0.466016,52
+c056,2,supported,0.480345,58
+c056,3,supported,0.702704,54
+c056,4,supported,0.654403,59
+c057,0,supported,0.190516,46
+c057,1,supported,0.278780,55
+c057,2,supported,0.212176,50
+c057,3,supported,0.179606,48
+c057,4,supported,0.267220,51
+c058,0,supported,0.158731,39
+c058,1,supported,0.192129,41
+c058,2,supported,0.165365,40
+c058,3,supported,0.157969,40
+c058,4,supported,0.262434,37
+c059,0,supported,0.306825,55
+c059,1,supported,0.390072,53
+c059,2,supported,0.436741,55
+c059,3,supported,0.324344,51
+c059,4,supported,0.293826,54
+c060,0,not supported,0.537848,46
+c060,1,not supported,0.509785,53
+c060,2,not supported,0.502294,47
+c060,3,not supported,0.530453,48
+c060,4,not supported,0.634217,58
+c061,0,supported,0.450703,78
+c061,1,supported,0.664200,47
+c061,2,supported,0.393612,55
+c061,3,supported,0.580892,62
+c061,4,supported,0.630196,62
+c062,0,supported,0.177166,55
+c062,1,supported,0.179140,54
+c062,2,supported,0.182849,55
+c062,3,supported,0.150822,51
+c062,4,supported,0.182812,55
+c063,0,supported,0.222361,52
+c063,1,supported,0.368615,54
+c063,2,supported,0.218328,52
+c063,3,supported,0.353649,51
+c063,4,supported,0.373131,52
+c064,0,supported,0.574415,51
+c064,1,supported,0.591855,59
+c064,2,supported,0.542542,41
+c064,3,supported,0.570729,47
+c064,4,supported,0.537215,45
+c065,0,supported,0.770245,45
+c065,1,supported,0.467924,46
+c065,2,supported,0.614791,53
+c065,3,supported,0.530090,47
+c065,4,supported,0.849848,46
+c066,0,not supported,0.503394,54
+c066,1,not supported,0.637129,56
+c066,2,not supported,0.734083,55
+c066,3,not supported,0.582565,52
+c066,4,not supported,0.706046,59
+c067,0,not supported,0.525747,65
+c067,1,not supported,0.494379,61
+c067,2,not supported,0.613167,58
+c067,3,not supported,0.432153,56
+c067,4,not supported,0.396433,55

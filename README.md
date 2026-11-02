@@ -63,9 +63,9 @@ A cosine near 0.82 is what sentences from the same paper look like in this embed
 
 ## Stable, including when the label is wrong
 
-Five draws, temperature 0.7, were taken for 587 prompts. The draws agree with each other on 549 of them. Mean confidence on those prompts is 0.983, and 0.597 on the other 38. Confidence here is the probability of the first label token, averaged over the draws that produced the majority label.
+Five draws, temperature 0.7, were taken for 587 prompts. The draws agree with each other on 549 of them. On the 67 original prompts the majority matches the temperature-0 label 66 times, and the human label 52 times, one fewer than the single decode. Only 3 of the 67 prompts disagree within the five draws. The samples repeat the label, including a wrong one.
 
-On the 67 original prompts the majority matches the temperature-0 label 66 times, and the human label 52 times, one fewer than the single decode. Mean confidence is 0.981 when that majority matches the human label and 0.923 when it does not. Only 3 of the 67 prompts disagree within the five draws. The samples repeat the label, including a wrong one. They do not mark the misses.
+Uncertainty is the mean token entropy of the full reply, in bits, averaged over the five draws that share the majority label. Each token uses its twenty most likely alternatives, and the remaining probability is one extra outcome. On the 67 original prompts the mean is 0.296 when the majority matches the human label and 0.463 when it does not. All 14 mismatches are unanimous, and the two ranges overlap.
 
 Asking for the rationale before the label, at temperature 0, changes 6 of the 67 labels. Five of the six new labels are *unclear*. Two claims become correct, two become incorrect, and two change while staying incorrect. The number of matches to the human label stays 53.
 
@@ -122,9 +122,67 @@ Every kept label is the temperature-0 label. The one-round mismatch with the hum
 
 The abstention is mostly the quote rule. After one round, 48 claims have a quote that is not an exact copy. On 38 of the 55 unanswered claims the two labels agree, and the quote is what drops the claim. The labels disagree on an exact quote for 7 claims. After the revision, 46 claims still fail the quote test, and the labels disagree on an exact quote for 2 claims. A shortened clause, a paraphrase, or an ellipsis is counted as a miss. The check does not measure how close the quote is.
 
+## The same runs, written as a graph
+
+The counts above are also written as a graph, in `graph/hypotheses.ttl`. The graph records those runs. It is a view of the same labels, not a second evaluation.
+
+A claim is a hypothesis. The sentence the annotator marked is an evidence span. The paper is a DOI. The theme already stored for that paper is the context node. The span text is that marked sentence. It has no character offset, because the runs did not record one. The retrieved chunks stay in the log.
+
+The span is linked to the hypothesis. A human label of *supported* adds CiTO `supports`. A human label of *not supported* adds CiTO `disputes`. A human label of *unclear* leaves the link untyped. The span's source is the paper, through Dublin Core `source`. The hypothesis is about the theme, through Dublin Core `subject`. The model and the two runs are PROV. The labels, the decision, and the deletion use a small namespace under the repository URL.
+
+`predictedLabel` is the temperature-0 label. `decision` is the one-round check, accept or abstain. `tokenEntropy` is the uncertainty above, and `agreement` is the share of those five full replies that carry the majority label. `labelChanged` is present for the 40 claims whose span was inside the five chunks, and it is true for `c010` and `c062`.
+
+The figure is six of the 67 hypotheses. A typed edge follows the human label. `c002` is unclear in the annotation and *not supported* at temperature 0. `c010` and `c062` are the two labels the deletion changed.
+
+```mermaid
+flowchart LR
+  h001["c001 · supported"]
+  e001["c001 span"]
+  e001 -->|supports| h001
+  e001 -->|from| p103391ai202116107
+  h001 -->|about| tfreshwater
+  h002["c002 · unclear"]
+  e002["c002 span"]
+  e002 -->|evidence for| h002
+  e002 -->|from| p103391ai202116107
+  h002 -->|about| tfreshwater
+  h006["c006 · not supported"]
+  e006["c006 span"]
+  e006 -->|disputes| h006
+  e006 -->|from| p101007s1053002102644y
+  h006 -->|about| tfreshwater
+  h010["c010 · not supported · label changed"]
+  e010["c010 span"]
+  e010 -->|disputes| h010
+  e010 -->|from| p103390d12020082
+  h010 -->|about| tfreshwater
+  h021["c021 · supported"]
+  e021["c021 span"]
+  e021 -->|supports| h021
+  e021 -->|from| p103989ajbm2623
+  h021 -->|about| tplant
+  h062["c062 · supported · label changed"]
+  e062["c062 span"]
+  e062 -->|supports| h062
+  e062 -->|from| p101002ecs22987
+  h062 -->|about| tother
+  p103391ai202116107["10.3391/ai.2021.16.1.07"]
+  p101007s1053002102644y["10.1007/s10530-021-02644-y"]
+  p103390d12020082["10.3390/d12020082"]
+  p103989ajbm2623["10.3989/ajbm.2623"]
+  p101002ecs22987["10.1002/ecs2.2987"]
+  tfreshwater["freshwater"]
+  tplant["plant"]
+  tother["other"]
+```
+
+### Limits
+
+The gold set is 67 claims from one annotator. The vocabulary reuses CiTO, Dublin Core, schema.org, SKOS, and PROV, and adds the terms the tables need. There is no link to the Open Research Knowledge Graph. Support and dispute here relate a marked sentence to a claim. A causal model would be a different graph.
+
 ## Scope
 
-Sixty-seven claims, one annotator, one evidence span per claim, one model. The second call sees the quotes but not the chunks, and a quote counts only when the characters match. The spans keep the defects of the PDF extract, and those defects enter the deletion and the SHAP sentences. The search never leaves the source paper. SHAP explains one score under a penalty that sets most sentences to zero. Confidence is the probability of the first label token, not of the whole label. The five draws are one sample at one temperature.
+Sixty-seven claims, one annotator, one evidence span per claim, one model. The second call sees the quotes but not the chunks, and a quote counts only when the characters match. The spans keep the defects of the PDF extract, and those defects enter the deletion and the SHAP sentences. The search never leaves the source paper. SHAP explains one score under a penalty that sets most sentences to zero. Uncertainty is the mean token entropy of the full reply, and each token uses twenty alternatives plus one residual bin. The five draws are one sample at one temperature.
 
 Deleting a sentence edits the prompt. It is not an estimate of a biological effect. The study says where this label comes from in the prompt. It does not say that the model has checked the paper.
 
@@ -147,7 +205,7 @@ The full texts come from the Zenodo record [10.5281/zenodo.14525619](https://doi
 | `results/shap_removal.csv` | Sentences removed in each ablation |
 | `results/results.csv` | Temperature-0 labels after those removals |
 | `results/sampled_labels.csv` | Every draw from the five-sample runs |
-| `results/sampled_summary.csv` | Majority label, agreement, and confidence |
+| `results/sampled_summary.csv` | Majority label and agreement from the capped draws |
 | `results/results_sampled.csv` | Sampled labels by condition |
 | `results/similarity_results.csv` | Mean cosine similarity to the evidence span |
 | `results/similarity_by_claim.csv` | The same similarity, one row per claim |
@@ -156,7 +214,12 @@ The full texts come from the Zenodo record [10.5281/zenodo.14525619](https://doi
 | `results/v2/comparison.csv` | One-round and one-revision counts |
 | `results/v2/v2a.csv` | One-round decision for each claim |
 | `results/v2/v2b.csv` | One-revision decision for each claim |
+| `results/uncertainty.csv` | Mean token entropy and agreement from five full replies |
+| `results/uncertainty_samples.csv` | The five replies behind that summary |
 | `sable/` | The second-call loop |
+| `sable/export_graph.py` | Writes the hypothesis graph from the one-round log |
+| `graph/hypotheses.ttl` | The 67 hypotheses as RDF |
+| `queries/` | Three SPARQL queries over that graph |
 | `figures/` | The three figures in this poster |
 | `main.ipynb` | The run, from retrieval through the order check |
 | `scripts/` | The same steps as importable runners |
@@ -179,8 +242,15 @@ python -m scripts.sample_labels
 python -m scripts.shap_similarity
 python -m scripts.order_intervention
 python -m sable.batch
+python -m sable.uncertainty
 ```
 
 `sentence_shap` also rebuilds the Chroma index under `chroma_db/`.
+
+The graph reads the tables and `results/v2/v2a.jsonl`. It does not call the API.
+
+```bash
+python -m sable.export_graph
+```
 
 </details>

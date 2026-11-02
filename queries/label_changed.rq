@@ -1,0 +1,10 @@
+# Claims whose temperature-0 label changed when the evidence span was deleted.
+PREFIX sable: <https://github.com/Acul01/SABLE/vocab#>
+
+SELECT ?hypothesis ?before ?after
+WHERE {
+  ?hypothesis sable:labelChanged true ;
+              sable:predictedLabel ?before ;
+              sable:labelAfterDeletion ?after .
+}
+ORDER BY ?hypothesis

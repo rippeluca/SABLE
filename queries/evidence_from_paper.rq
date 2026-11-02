@@ -1,0 +1,12 @@
+# Evidence spans from one paper. The paper is the DOI URI.
+PREFIX sable: <https://github.com/Acul01/SABLE/vocab#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?evidence ?hypothesis
+WHERE {
+  VALUES ?paper { <https://doi.org/10.3391/ai.2021.16.1.07> }
+  ?evidence a sable:Evidence ;
+            sable:evidenceFor ?hypothesis ;
+            dcterms:source ?paper .
+}
+ORDER BY ?evidence
