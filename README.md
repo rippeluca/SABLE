@@ -1,14 +1,10 @@
 <div align="center">
 
-# The Evidence Span Rarely Carries the Verdict
-
-**SABLE** · Span Ablation for Black-box Label Evaluation
+# **SABLE** · Span Ablation for Black-box Label Evaluation
 
 A feasibility study on invasion-biology claims
 
-Luca Rippe
-
-[Paper](report_paper/main.pdf)
+A full paper-style report on the experiments carried out in this project can be found [here](report_paper/main.pdf).
 
 </div>
 
